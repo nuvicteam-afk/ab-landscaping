@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>AB Landscaping | Landscaping, Outdoor Lighting & Concrete</title>
+
+<meta name="description" content="AB Landscaping offers professional landscaping, outdoor lighting, and concrete services in Dallas, Texas. Call 214-780-6829 for a free estimate.">
+<meta name="keywords" content="landscaping Dallas TX, concrete contractor Dallas, outdoor lighting installation Dallas">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --green:#2f5d3a;
+  --brown:#6b4f3b;
+  --dark:#1f1f1f;
+--light:#d6d6d6;
+}
+
+h1, h2, h3 {
+  font-family:'Playfair Display', serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin:0;
+  font-family:'DM Sans',sans-serif;
+  background:var(--light);
+  color:#222;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 95px;                 
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 1000;
+  overflow: visible;         
+}
+
+header h2 {
+  font-family:'Poppins',sans-serif;
+  margin:0;
+}
+
+.call-btn {
+  background:var(--green);
+  color:white;
+  padding:12px 26px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:.5px;
+}
+
+
+.hero {
+  margin:120px auto 0;
+  height:68vh;
+  max-width:1200px;
+  background:
+    linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('images/hero.jpg') center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  padding: 28px 20px;
+  border-radius:24px;
+  box-shadow:0 25px 60px rgba(0,0,0,0.25);
+}
+
+
+.hero h1 {
+  font-size:3rem;
+  font-family:'Poppins',sans-serif;
+}
+
+.hero p {
+  max-width:600px;
+  margin:15px auto;
+  font-size:1.1rem;
+}
+
+.hero .buttons a {
+  margin:10px;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:25px;
+}
+
+.card {
+  background:white;
+  padding:35px;
+  border-radius:14px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-family:'Poppins',sans-serif;
+}
+
+.why {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+form {
+  max-width:520px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+input, textarea {
+  padding:14px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:15px;
+}
+
+.logo img {
+  height:250px;
+  width:auto;
+  display:block;
+}
+
+button {
+  background:var(--green);
+  color:white;
+  padding:14px;
+  border:none;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+footer {
+  background:var(--dark);
+  color:#aaa;
+  text-align:center;
+  padding:35px 20px;
+}
+
+footer a {
+  color:#4caf50;
+  text-decoration:none;
+}
+.call-btn {
+  transition: background .3s ease, transform .2s ease;
+}
+
+.call-btn:hover {
+  background:var(--brown);
+  transform: scale(1.03);
+}
+
+.services-section {
+  padding: 90px 20px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  min-height: 420px;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.service-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.service-card h3 {
+  font-size: 1.35rem;
+  margin: 16px 18px 8px;
+}
+
+.service-card p {
+  margin: 0 20px 25px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+section h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  font-size: 2.4rem;
+}
+
+.service-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+#contact {
+  background: #f7f7f7;
+  border-radius: 24px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+#contact form {
+  margin: 0 auto;
+}
+
+#contact {
+  padding: 80px 20px;
+  margin-top: -40px;        
+  text-align: center;
+}
+
+</style>
+</head>
+
+<body>
+
+ <header>
+  <a href="#" class="logo">
+    <img src="images/logo-header.png" alt="AB Landscaping logo">
+  </a>
+  <a class="call-btn" href="tel:2147806829">Call Now</a>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Mckinney TX | Melissa TX | Allen TX</h1>
+<p>Family-owned and operated, we take pride in delivering top-quality landscaping, concrete, and outdoor lighting on every project. Our focus is honest work, attention to detail, and results you can be proud of.</p>
+    <div class="buttons">
+     <p style="margin-top:24px; font-size:1.15rem; font-weight:500;">
+  ✔ Free estimates &nbsp;•&nbsp; ✔ Local & reliable &nbsp;•&nbsp; ✔ Quality workmanship
+</p>
+
+
+    </div>
+  </div>
+</section>
+<section class="services-section">
+  <h2>Our Services</h2>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <img src="images/landscaping.jpg" alt="Landscaping services">
+      <h3>Landscaping</h3>
+      <p>Clean, modern landscaping designed to improve curb appeal and outdoor living.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/concrete.jpg" alt="Concrete services">
+      <h3>Concrete</h3>
+      <p>Patios, walkways, driveways, and decorative concrete built to last.</p>
+    </div>
+
+    <div class="service-card">
+      <img src="images/lighting.jpg" alt="Outdoor lighting services">
+      <h3>Outdoor Lighting</h3>
+      <p>Beautiful lighting that adds safety, visibility, and night-time curb appeal.</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Why Choose AB Landscaping?</h2>
+  <div class="why">
+    <div class="card">✔ Local & Reliable</div>
+    <div class="card">✔ Quality Craftsmanship</div>
+    <div class="card">✔ Free Estimates</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get An Estimate Today!</h2>
+  <form action="mailto:ABlandscaping25@gmail.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+
+<footer>
+  <p>📞 <a href="tel:2147806829">214-780-6829</a> | ✉ <a href="mailto:ABlandscaping25@gmail.com">ABlandscaping25@gmail.com</a></p>
+  <p>Serving Dallas & Surrounding Areas</p>
+</footer>
+
+</body>
+</html>
