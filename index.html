@@ -18,6 +18,32 @@
   --dark:#1f1f1f;
 --light:#d6d6d6;
 }
+  @media (max-width: 768px) {
+  .mobile-call-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--green);
+    z-index: 2000;
+    text-align: center;
+  }
+
+  .mobile-call-bar a {
+    display: block;
+    padding: 16px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: .5px;
+  }
+}
+  
+body {
+  padding-bottom: 70px;
+}
+
 @media (max-width: 768px) {
 
   header {
@@ -273,6 +299,12 @@ section h2 {
   margin-top: -40px;        
   text-align: center;
 }
+  
+@media (max-width: 768px) {
+  header .call-btn {
+    display: none;
+  }
+}
 
 </style>
 </head>
@@ -349,7 +381,12 @@ section h2 {
   <p>📞 <a href="tel:2147806829">214-780-6829</a> | ✉ <a href="mailto:ABlandscaping25@gmail.com">ABlandscaping25@gmail.com</a></p>
   <p>Serving Dallas & Surrounding Areas</p>
 </footer>
+  
+<div class="mobile-call-bar">
+  <a href="tel:2147806829">Call Now</a>
+</div>
 
 </body>
 </html>
+
 
